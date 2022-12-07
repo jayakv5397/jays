@@ -55,10 +55,31 @@ h3{
 }
 
 
-.title-img{
-    transform: rotate(25deg);
+.hh{
     position: relative;
 }
+
+.title-img{
+    transform: rotate(25deg);
+    position: absolute;
+    width: 60%;
+    right: 20%;
+}
+
+@media (max-width:1028px) {
+
+    .title-img{
+        transform: rotate(0);
+        position: static;
+        width: 90%;
+        margin-top: 10%;
+    }
+    #title{
+        text-align: center;
+    }
+
+}
+
 
 #features{
     /* color: #ff615d; */
@@ -149,4 +170,8 @@ h3{
     padding: 1% 15%;
     text-align: center;
     color: black;
+}
+
+.text-dark{
+    color:grey;
 }
